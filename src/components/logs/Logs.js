@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Preloader from '../layouts/Preloader'
 import LogItem from './LogItem'
 
 const Logs = () => {
@@ -19,6 +20,10 @@ const Logs = () => {
 		const data = await res.json()
 		setLogs(data)
 		setLoading(false)
+	}
+
+	if (loading) {
+		return <Preloader />
 	}
 
 	return (
