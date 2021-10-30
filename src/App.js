@@ -4,6 +4,8 @@ import Logs from './components/logs/Logs'
 import AddBtn from './components/layouts/AddBtn'
 import AddLogModal from './components/logs/AddTechForm'
 import EditLogModal from './components/logs/EditLogModal'
+import AddTechModal from './components/techs/AddTechModal'
+import TechsListModal from './components/techs/TechsListModal'
 
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css/dist/js/materialize.min.js'
@@ -21,6 +23,8 @@ function App() {
 				<AddBtn />
 				<AddLogModal />
 				<EditLogModal />
+				<AddTechModal />
+				<TechsListModal />
 				<Logs />
 			</div>
 		</Fragment>
